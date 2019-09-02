@@ -4,8 +4,8 @@ import ImageAsync from 'react-image-async';
 import cx from 'classnames';
 
 import { FadeIn } from '/src/shared';
-import Puff from '/src/assets/puff.svg';
 
+import Puff from './puff.svg';
 import styles from './styles.scss';
 
 const MediaLoader = ({ src, cover, className }) => (

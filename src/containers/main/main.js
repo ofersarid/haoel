@@ -1,17 +1,26 @@
 import React from 'react';
-import cx from 'classnames';
+// import cx from 'classnames';
+import PropTypes from 'prop-types';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
-// import PropTypes from 'prop-types';
-import styles from './styles.scss';
+// import services from '/src/services';
+import ScrollSnap from '/src/services/scroll-snap/scroll-snap';
+// import styles from './styles.scss';
 
-const Main = () => (
-  <div className={cx(styles.main)} >Main Component</div >
+const Main = ({ children }) => (
+  <ScrollSnap max={10} >
+    {children}
+  </ScrollSnap >
 );
 
-Main.propTypes = {};
+Main.propTypes = {
+  // frame: PropTypes.number.isRequired,
+  children: PropTypes.any,
+};
 
-const mapStateToProps = state => ({}); // eslint-disable-line
+const mapStateToProps = state => ({
+  // frame: services.scrollSnap.selectors.frame(state)
+});
 
 const mapDispatchToProps = dispatch => ({}); // eslint-disable-line
 
