@@ -1,4 +1,4 @@
-import { fromJS } from 'immutable/dist/immutable-nonambient';
+import { fromJS } from 'immutable';
 import currentDevice from 'current-device';
 import isTouchDevice from 'is-touch-device/build';
 import { ACTIONS } from './constants';

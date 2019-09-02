@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Redirect, IndexRedirect } from 'react-router';
+import { Route, Redirect, IndexRedirect } from 'react-router'; // eslint-disable-line
 import Main from '/src/containers/main/main';
 // import Pages from '/src/containers';
 

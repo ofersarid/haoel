@@ -1,5 +1,6 @@
 export default {
   reactor: require('./reactor').default,
-  routes: require('./routes').default,
+  routs: require('./redux-router').default,
   device: require('./device').default,
+  scrollSnap: require('./scroll-snap').default,
 };
