@@ -1,0 +1,11 @@
+.scrollableArea {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.hasOverflow {
+  padding-right: 16px;
+  overflow: auto;
+}
